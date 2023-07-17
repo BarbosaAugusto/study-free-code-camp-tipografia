@@ -1,0 +1,85 @@
+/*8.Defina a borda*/* {/*11.Por padrão o navegador inclui o border e o padding no tamanho do elemento. Isso fará o navegador */
+    box-sizing: border-box;
+}
+
+body {/*5.Defina a fonte*/
+  font-family: Open Sans, sans-serif;
+}
+
+html {/*6.Defina o tamanho da fonte*/
+  font-size: 16px;
+}
+
+.label {/*8.Defina a borda*/
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+
+header h1 {/*25.Atualize para que seja o h1 dentro do elemento header*/
+  font-weight: 800;/*12.Defina peso da fonte*/
+	text-align: center;/*13.Alinhando ao centro*/
+	margin: -4px 0;/*14.Defina  a margin negativa isso */
+	letter-spacing: 0.15px;/*18.A propriedade letter-spacing define o espaçamento entre as letras*/
+}
+
+p {
+  margin: 0;/*15.Elimine as margens */
+	display: flex;/*23.torne o elemento um flexbox */
+  justify-content: space-between;/*os elementos dentro do flex irçao ficar espaçados*/
+}
+
+.bold {/*21.Definindo peso da fonte */
+  font-weight: 800;
+}
+
+.divider {/*17.Estilize a div criada */
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+
+.large {/*27.Deu altura para a div criada*/
+  height: 10px;
+}
+
+.large, .medium {/*27.Definciu a cor de fundo da div*/
+  background-color: black;
+	border: 0;/*28.Zere a borda*/
+}
+
+.medium {/*39.Defina a altura da div*/
+  height: 5px;
+}
+
+.small-text {
+  font-size: 0.85rem;/*31.A unidade rem é a unidade de medida root em que é relativa ao html, a fonte foi definida como 16px, o fonte-size então é 85% de 16px*/
+  
+}
+
+.calories-info h2 {/*32. tire todas as bordas*/
+  margin: 0;
+}
+
+.calories-info {/*33. torne o elemento flexbox*/
+  display: flex;
+  justify-content: space-between;/*espace os itens*/
+  align-items: flex-end;/*33. espace os itens para o fim*/
+}
+
+.left-container p {/*35.Estilizando o elemento*/
+  margin: -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.calories-info span {/*36.Estilizando o elemento*/
+  font-size: 2.4em;/*Definindo tamanho da fonte*/
+  font-weight: 700;/*Definindo peso da fonte*/
+	margin: -7px -2px;/*37.Alinhando o texto no padrão*/
+}
+
+.right {/*42.Alinhando o texto para o final*/
+  justify-content: flex-end;
+ 
+}
