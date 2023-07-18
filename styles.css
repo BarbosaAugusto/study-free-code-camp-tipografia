@@ -1,85 +1,100 @@
-/*8.Defina a borda*/* {/*11.Por padrão o navegador inclui o border e o padding no tamanho do elemento. Isso fará o navegador */
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body {/*5.Defina a fonte*/
-  font-family: Open Sans, sans-serif;
-}
-
-html {/*6.Defina o tamanho da fonte*/
+html {
   font-size: 16px;
 }
 
-.label {/*8.Defina a borda*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.label {
   border: 2px solid black;
   width: 270px;
   margin: 20px auto;
   padding: 0 7px;
 }
 
-header h1 {/*25.Atualize para que seja o h1 dentro do elemento header*/
-  font-weight: 800;/*12.Defina peso da fonte*/
-	text-align: center;/*13.Alinhando ao centro*/
-	margin: -4px 0;/*14.Defina  a margin negativa isso */
-	letter-spacing: 0.15px;/*18.A propriedade letter-spacing define o espaçamento entre as letras*/
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px
 }
 
 p {
-  margin: 0;/*15.Elimine as margens */
-	display: flex;/*23.torne o elemento um flexbox */
-  justify-content: space-between;/*os elementos dentro do flex irçao ficar espaçados*/
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.bold {/*21.Definindo peso da fonte */
-  font-weight: 800;
-}
-
-.divider {/*17.Estilize a div criada */
+.divider {
   border-bottom: 1px solid #888989;
   margin: 2px 0;
 }
 
-.large {/*27.Deu altura para a div criada*/
+.bold {
+  font-weight: 800;
+}
+
+.large {
   height: 10px;
 }
 
-.large, .medium {/*27.Definciu a cor de fundo da div*/
+.large, .medium {
   background-color: black;
-	border: 0;/*28.Zere a borda*/
+  border: 0;
 }
 
-.medium {/*39.Defina a altura da div*/
+.medium {
   height: 5px;
 }
 
 .small-text {
-  font-size: 0.85rem;/*31.A unidade rem é a unidade de medida root em que é relativa ao html, a fonte foi definida como 16px, o fonte-size então é 85% de 16px*/
-  
+  font-size: 0.85rem;
 }
 
-.calories-info h2 {/*32. tire todas as bordas*/
+
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calories-info h2 {
   margin: 0;
 }
 
-.calories-info {/*33. torne o elemento flexbox*/
-  display: flex;
-  justify-content: space-between;/*espace os itens*/
-  align-items: flex-end;/*33. espace os itens para o fim*/
-}
-
-.left-container p {/*35.Estilizando o elemento*/
+.left-container p {
   margin: -5px -2px;
   font-size: 2em;
   font-weight: 700;
 }
 
-.calories-info span {/*36.Estilizando o elemento*/
-  font-size: 2.4em;/*Definindo tamanho da fonte*/
-  font-weight: 700;/*Definindo peso da fonte*/
-	margin: -7px -2px;/*37.Alinhando o texto no padrão*/
+.calories-info span {
+  margin: -7px -2px;
+  font-size: 2.4em;
+  font-weight: 700;
 }
 
-.right {/*42.Alinhando o texto para o final*/
+.right {
   justify-content: flex-end;
- 
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.double-indent {
+  margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
 }
